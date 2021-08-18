@@ -1,0 +1,1 @@
+<?php # essa página deve ser exibida caso a página não tenha template próprio?>
