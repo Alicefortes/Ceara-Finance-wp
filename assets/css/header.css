@@ -1,0 +1,32 @@
+.logo{
+    text-align:center;
+    min-width:fit-content;
+}
+
+.menu{
+    justify-content: center;
+}
+.menu ul>li:hover{
+    border-bottom: white 1px solid;
+}
+
+.menu ul>li{
+    border-bottom: #212529 1px solid;
+}
+
+.menu ul>li>a{
+    color: white;
+}
+
+.menu ul>li>a:hover{
+    color: rgb(248, 236, 131);
+}
+
+.idioma{
+    justify-content: center;
+    color: white;
+}
+
+.idioma>:nth-child(1){
+    padding-right: 1rem;
+}

@@ -8,13 +8,16 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark align-middle">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><?php bloginfo('name')?></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="col-4 logo"> 
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/logo2.svg" alt="logo" width="40px">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/logo1.svg" alt="logo">
+        </div>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse col-4 menu" id="navbarNav" >
             <?php wp_nav_menu(array(
                 'menu' => 'main_nav',
                 'menu_class' => 'navbar-nav',
@@ -23,6 +26,10 @@
                 'walker' => new WP_Bootstrap_Navwalker()
                 )
                 );?>
+        </div>
+        <div class="collapse navbar-collapse col-4 idioma" id="navbarNav">
+            <a href="">pt-br</a>
+            <a href="">english</a>
         </div>
     </div>
     </nav>

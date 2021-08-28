@@ -20,10 +20,11 @@ add_action('after_setup_theme','my_theme_setup');
 function css_files() {
     
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
+    wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css');
     
     if ( is_front_page() == true ) {
         // só vai carregar se estiver na front-page
-        wp_enqueue_style('home', get_template_directory_uri() . '/assets/css/styles/home.css');
+        wp_enqueue_style('home', get_template_directory_uri() . '/assets/css/home.css');
     }
 }
 add_action('wp_enqueue_scripts', 'css_files');
