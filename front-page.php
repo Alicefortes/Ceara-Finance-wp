@@ -1,3 +1,21 @@
 <?php get_header(); ?>
-<h2>home(front page)</h2>
+<main>
+    <div class="banner">
+        <video width="100%" autoplay muted loop id="video-back">
+            <source src="<?php echo get_bloginfo('template_url') ?>/assets/images/landing/landing.mp4" type="video/mp4">
+        </video>
+        <div class="black-one">
+        </div>
+        <div class="container">
+            <div class="banner-text montserrat">
+                <h1>Uma liga de mercado financeiro com <span>propósito</span> bem definido!</h1>
+                <h5>
+                    Disruptivos no estado, o Ceará Finance é a primeira instituição universitária 
+                    com foco exclusivo em mercado financeiro.
+                </h5>
+            </div>
+        </div>
+    </div>
+    <p>oi</p>
+<main>
 <?php get_footer(); ?>

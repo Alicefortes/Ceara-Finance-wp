@@ -22,6 +22,7 @@ function css_files() {
     
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
     wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css');
+    wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/css/fonts.css');
     
     if ( is_front_page() == true ) {
         // só vai carregar se estiver na front-page
@@ -32,6 +33,19 @@ function css_files() {
         // só vai carregar se estiver na pag projetos
         wp_enqueue_style('projetos', get_template_directory_uri() . '/assets/css/projetos.css');
     }
+
+    if ( is_page('equipe') == true ) {
+        // só vai carregar se estiver na pag equipe
+        wp_enqueue_style('equipe', get_template_directory_uri() . '/assets/css/equipe.css');
+    }
+
+    if ( is_category() == true ) {
+        // só vai carregar se estiver em uma das categorias do blog
+        wp_enqueue_style('categoria', get_template_directory_uri() . '/assets/css/categoria.css');
+    }
+
+    // criar o if da single
+    
 }
 add_action('wp_enqueue_scripts', 'css_files');
 

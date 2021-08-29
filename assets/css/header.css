@@ -33,6 +33,11 @@
     transition: all 1s;
 }
 
+.menu ul>li>a:focus,
+.idioma ul>li>a:focus{
+    color: rgb(207, 190, 32);
+}
+
 .stroke{
     padding-top:1rem;
     padding-bottom:1rem;

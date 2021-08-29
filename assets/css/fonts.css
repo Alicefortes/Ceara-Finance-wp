@@ -1,4 +1,11 @@
 /* Padronização dos estilos das fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
 /*
 h1{}
 
@@ -14,19 +21,19 @@ h6{}
 
 p{}
 
+*/
 .bold{
     font-weight: bold;
 }
 
 .bolder{
-    font-weight: bolder;
+    font-weight: 900;
 }
 
-.nome_da_fonte1{
-    carregar
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
 }
 
-.nome_da_fonte2{
-    carregar
+.roboto{
+    font-family: 'Roboto', sans-serif;
 }
-*/

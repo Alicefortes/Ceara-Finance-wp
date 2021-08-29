@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark align-middle stroke">
+    <nav class="navbar navbar-expand-lg bg-dark align-middle stroke montserrat">
     <div class="container-fluid">
         <div class="col-3 logo">
             <a href="#" style="text-decoration:none;">
