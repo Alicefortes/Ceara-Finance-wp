@@ -10,7 +10,8 @@ function my_theme_setup(){
 
     register_nav_menus(
         array(
-            'primary' => 'Primary'
+            'primary' => 'Primary',
+            'languages' => 'Languages'
         )
     );
 }
@@ -25,6 +26,11 @@ function css_files() {
     if ( is_front_page() == true ) {
         // só vai carregar se estiver na front-page
         wp_enqueue_style('home', get_template_directory_uri() . '/assets/css/home.css');
+    }
+
+    if ( is_page('projetos') == true ) {
+        // só vai carregar se estiver na pag projetos
+        wp_enqueue_style('projetos', get_template_directory_uri() . '/assets/css/projetos.css');
     }
 }
 add_action('wp_enqueue_scripts', 'css_files');
