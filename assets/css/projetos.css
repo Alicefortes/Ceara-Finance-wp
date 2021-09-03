@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .banner{
@@ -36,50 +37,97 @@
     /*filter: contrast(0.5);*/
     margin-top: -4rem;
 }
+/* FALTA COLOCAR FONTES*/
+h1,h2,h3,h4,h5,p{
+    font-family: 'Montserrat';
+}
 /*Educacao*/
 .educacao{
-    margin-top: 64px;
-   
-    font-family: 'montserrat';
+    /* background-color ta aqui enquanto as cores do site não são definidas*/
+    background-color: #FAFAFA;
+    margin: auto;
 }
 .section-title{
-    margin-bottom: 32px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 .section-title h3{
     padding-bottom: 28px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
+     font-weight: 800;
     font-size: 48px;
-    line-height: 59px;
 }
-.section-title p{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
+.section-text{
     font-size: 18px;
-    line-height: 22px;
 }
 
 .educacao-item{
     padding: 0 54px;
     text-align: center;
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
 }
 .educacao-item h4{
-    padding-bottom:  6px; ;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
+    padding-bottom: 6px; 
     font-size: 24px;
     line-height: 29px;
 }
 .educacao-item p{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
     text-align: center;
+}
+/*Asset management*/
+.asset-management{
+     /* background-color ta aqui enquanto as cores do site não são definidas*/
+    background-color: #FAFAFA;
+}
+.asset-management .section-title{
+    margin-top: 9rem;
+}
+.asset-management .card{
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.08);
+    border-radius: .5rem;
+    /* ver depois tamanho em porcentagem para responsividade*/
+    width: 22.5rem;
+    margin: auto;
+}
+.asset-management .card .card-title{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.asset-management .card .card-title h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+.asset-management .card .card-title p{
+     font-size: 14px;
+    color: #969BAB;
+}
+.asset-management .card .card-text {
+    padding: 0px 2rem; 
+}
+.asset-management .card .card-text .texto {
+    margin-bottom: 1rem; 
+}
+
+.asset-management .card .card-text .item {
+    font-size: 14px;
+    padding-bottom: 0.6rem; 
+}
+/*Equity Reseach*/
+.equity-reseach{
+    background-color: #FAFAFA;
+}
+.equity-reseach .section-title{
+    margin-top: 9rem;
+}
+.equity-reseach-item{
+    margin:auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+.equity-reseach-item h4{
+    font-size: 24px;
+    padding-bottom: .5rem;
 }
 
