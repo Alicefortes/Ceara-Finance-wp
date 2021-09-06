@@ -79,29 +79,29 @@
             </div>
         </div>
     </div>
-    <div class="equity-reseach">
+    <div class="equity-research">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 section-title">
-                    <h1>CF Equity Reseach</h1>
+                    <h1>CF Equity Research</h1>
                     <p>A área de Research da liga tem como objetivo a formação de membros com qualidades competitivas para participação nos challenges.</p>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <div class="equity-reseach-item">
+                    <div class="equity-research-item">
                         <h4>1</h4>
                         <p>Construção de uma tese de investimentos. </p>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="equity-reseach-item">
+                    <div class="equity-research-item">
                         <h4>2</h4>
                         <p>Produção de apresentações de nível altíssimo de qualidade.</p>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="equity-reseach-item">
+                    <div class="equity-research-item">
                         <h4>3</h4>
                         <p>Modelagem financeira para valuation.</p>
                     </div>
@@ -110,6 +110,5 @@
            
         </div>
     </div>
-    <p>Teste 1 2 3</p>
 <main>
 <?php get_footer(); ?>

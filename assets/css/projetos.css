@@ -106,19 +106,19 @@
 .asset-management .card .card-text .item {
     padding-bottom: 0.6rem; 
 }
-/*Equity Reseach*/
-.equity-reseach{
+/*Equity Research*/
+.equity-research{
     background-color: #FAFAFA;
 }
-.equity-reseach .section-title{
+.equity-research .section-title{
     margin-top: 9rem;
 }
-.equity-reseach-item{
+.equity-research-item{
     margin:auto;
     text-align: center;
     margin-top: 2rem;
 }
-.equity-reseach-item h4{
+.equity-research-item h4{
     padding-bottom: .5rem;
 }
 

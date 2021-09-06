@@ -21,7 +21,7 @@
                 echo '
                     <a href="#"><p>CF Educação</p></a>
                     <a href="#"><p>CF Asset Management</p></a>
-                    <a href="#"><p>CF Equity Rsearch</p></a>
+                    <a href="#"><p>CF Equity Research</p></a>
                 ';
             }?>
             <?php if ( is_page('equipe') == true ){
