@@ -22,6 +22,7 @@ function css_files() {
     
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
     wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css');
+    wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css');
     wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/css/fonts.css');
     
     if ( is_front_page() == true ) {
