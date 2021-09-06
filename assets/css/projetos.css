@@ -15,7 +15,7 @@
 .banner .banner-text{
     margin: auto;
     margin-top:10rem;
-    max-width: 850px;
+    max-width: 1000px;
     min-width: 330px;
     text-align: center;
 }
@@ -37,10 +37,7 @@
     /*filter: contrast(0.5);*/
     margin-top: -4rem;
 }
-/* FALTA COLOCAR FONTES*/
-h1,h2,h3,h4,h5,p{
-    font-family: 'Montserrat';
-}
+
 /*Educacao*/
 .educacao{
     /* background-color ta aqui enquanto as cores do site não são definidas*/
@@ -51,36 +48,31 @@ h1,h2,h3,h4,h5,p{
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
-.section-title h3{
-    padding-bottom: 28px;
-     font-weight: 800;
-    font-size: 48px;
-}
-.section-text{
-    font-size: 18px;
+.section-title h1{
+    padding-bottom: 1.75rem;
+    font-weight: 800;
 }
 
 .educacao-item{
-    padding: 0 54px;
+    padding: 0 3.375rem;
     text-align: center;
     padding-bottom: 1rem;
 }
 .educacao-item h4{
+    font-weight: 600;
     padding-bottom: 6px; 
-    font-size: 24px;
-    line-height: 29px;
 }
 .educacao-item p{
-    font-size: 18px;
     text-align: center;
 }
+
 /*Asset management*/
 .asset-management{
      /* background-color ta aqui enquanto as cores do site não são definidas*/
     background-color: #FAFAFA;
 }
 .asset-management .section-title{
-    margin-top: 9rem;
+    margin-top: 8rem;
 }
 .asset-management .card{
     background-color: #FFFFFF;
@@ -91,16 +83,17 @@ h1,h2,h3,h4,h5,p{
     width: 22.5rem;
     margin: auto;
 }
+.cardsflex {
+    display: flex;
+}
 .asset-management .card .card-title{
     padding-left: 2rem;
     padding-top: 1rem;
 }
 .asset-management .card .card-title h5{
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 700;
 }
-.asset-management .card .card-title p{
-     font-size: 14px;
+.asset-management .card .card-title h6{
     color: #969BAB;
 }
 .asset-management .card .card-text {
@@ -111,7 +104,6 @@ h1,h2,h3,h4,h5,p{
 }
 
 .asset-management .card .card-text .item {
-    font-size: 14px;
     padding-bottom: 0.6rem; 
 }
 /*Equity Reseach*/
@@ -127,7 +119,14 @@ h1,h2,h3,h4,h5,p{
     margin-top: 2rem;
 }
 .equity-reseach-item h4{
-    font-size: 24px;
     padding-bottom: .5rem;
 }
 
+@media (max-width:991px){
+    .cardsflex {
+        flex-wrap: wrap;
+    }
+    .cardsflex div:nth-child(1) {
+        margin-bottom: 2rem;
+    }
+}
