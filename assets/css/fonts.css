@@ -3,30 +3,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
 /*font-family: 'Roboto', sans-serif;*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800;900&display=swap');
 /*font-family: 'Montserrat', sans-serif;*/
 
-/*
-h1{}
-
-h2{}
-
-h3{}
-
-h4{}
-
-h5{}
-
-h6{}
-
-p{}
-
-*/
-.bold{
-    font-weight: bold;
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Montserrat';
 }
 
-.bolder{
+p{
+    font-size: 1.125rem;
+}
+
+.bold > h1,
+.bold > h2,
+.bold > h3,
+.bold > h4,
+.bold > h5,
+.bold > h6,
+.bold > p
+{
+    font-weight: 700;
+}
+
+.bolder > h1,
+.bolder > h2,
+.bolder > h3,
+.bolder > h4,
+.bolder > h5,
+.bolder > h6,
+.bolder > p
+{
     font-weight: 900;
 }
 
