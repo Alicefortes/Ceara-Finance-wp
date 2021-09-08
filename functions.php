@@ -11,7 +11,8 @@ function my_theme_setup(){
     register_nav_menus(
         array(
             'primary' => 'Primary',
-            'languages' => 'Languages'
+            'languages' => 'Languages',
+            'categories' => 'Categories'
         )
     );
 }
@@ -45,7 +46,10 @@ function css_files() {
         wp_enqueue_style('categoria', get_template_directory_uri() . '/assets/css/categoria.css');
     }
 
-    // criar o if da single
+    if ( is_single() == true ) {
+        // só vai carregar se estiver em um dos posts (single)
+        wp_enqueue_style('posts', get_template_directory_uri() . '/assets/css/single.css');
+    }
     
 }
 add_action('wp_enqueue_scripts', 'css_files');

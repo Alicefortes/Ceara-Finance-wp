@@ -1,5 +1,5 @@
 .logo{
-    text-align:center;
+    text-align:start;
     min-width:fit-content;
 }
 
@@ -7,6 +7,7 @@
     justify-content: center;
     text-align: center;
 }
+
 
 .menu ul>li{
     padding-right: 2vw;
