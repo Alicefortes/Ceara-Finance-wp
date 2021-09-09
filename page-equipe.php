@@ -7,7 +7,7 @@
         <div class="black-one">
         </div>
         <div class="container">
-            <div class="banner-text montserrat bold">
+            <div class="banner-text bold">
                 <h1>
                     "As pessoas se unem por um propósito, e essa parceria é baseada na necessidade 
                     de cooperar para alcançá-lo"

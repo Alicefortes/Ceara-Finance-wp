@@ -7,7 +7,7 @@
         <div class="black-one">
         </div>
         <div class="container">
-            <div class="banner-text montserrat bold">
+            <div class="banner-text bold">
                 <h1>Uma liga de mercado financeiro com <span>propósito</span> bem definido!</h1><br>
                 <h5>
                     Disruptivos no estado, o Ceará Finance é a primeira instituição universitária 

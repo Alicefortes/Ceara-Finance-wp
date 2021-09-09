@@ -7,7 +7,7 @@
         <div class="black-one">
         </div>
         <div class="container">
-            <div class="banner-text montserrat bold">
+            <div class="banner-text bold">
                 <h1>"A melhor coisa que um ser humano pode fazer é ajudar outro ser humano a saber mais."</h1>
                 <h5 style="text-align:end;">-Charlie Munger</h5><br>
                 <h5>
