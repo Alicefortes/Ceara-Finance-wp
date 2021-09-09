@@ -25,11 +25,19 @@ footer{
 .social {
     display: flex;
 }
-.social p{
+.social a{
     margin-right: 22px;
 }
 
 .direito{
     margin-top: 2.7rem;
     margin-bottom: 1.5rem;
+}
+
+.redes{
+   display: flex;
+    align-items:baseline;
+}
+.redes .redes-img{
+    padding-right:1.5rem ;
 }
