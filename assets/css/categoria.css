@@ -1,0 +1,164 @@
+*{
+    border: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ultimos{
+    background-color: #1B1B1B;
+    z-index: -5;
+    color: white;
+    height: auto;
+}
+
+.catepost{
+    background-color:#FAFAFA;
+}
+
+.section-categoria{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.categoria-item{
+    background-color: white;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0000008C;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    height: 8rem;
+}
+
+
+.categoria-item>a>span{
+    color: black;
+    font-size: 36px;
+    margin-top: 0.5rem;
+}
+
+.categoria-item>a>h5{
+    color: black;
+}
+
+.categoria-item>a:hover>span,
+.categoria-item>a:hover>h5{
+    color: #FDD835;
+}
+
+.primeiro .banner{
+    width: auto;
+    height: 95%;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.primeiro .thumb{
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 0vw;
+    /*filter: contrast(0.5);*/
+    z-index: -1;
+}
+.primeiro .infos{
+    /*
+    background-color: rgb(0,0,0,0.3);
+    */
+    margin-top: 70%;
+    padding-bottom: 0rem;
+}
+
+.infos .date{
+    display: flex;
+}
+.infos .date>p{
+    margin-left:0.5rem ;
+}
+
+.primeiro .teste{
+    background-color: rgb(0,0,0,0.3);
+    z-index: -1;
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 65%;
+}
+
+@media(max-width:991px){
+    .primeiro .banner{
+        height: 400px;
+        width: 400px;
+    }
+
+    .segundo .banner>a>img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media(max-width:1199px){
+    .segundo .banner>a>img{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media(min-width:1200px){
+    .primeiro .banner{
+        height: 500px;
+        width: 500px;
+    }
+
+    .segundo .banner>a>img{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+.segundo a>div,
+.segundo>a{
+    display: flex;
+}
+
+.segundo .banner{
+    display: flex;
+    width: auto;
+    height: 45%;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.segundo .thumb{
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    /*filter: contrast(0.5);*/
+    z-index: -1;
+}
+
+.segundo .infos{
+    z-index: 1;
+    width: auto;
+}
+
+.date>h6:nth-child(2){
+    margin-right: 1rem;
+}
+
+.date>h6{
+    margin-top: 0.2rem;
+}
