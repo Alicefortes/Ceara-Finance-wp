@@ -66,15 +66,15 @@
                             <p class="section-text texto">Nosso fundo simulado de ações. Através de períodos de análise definida e diversas discussões internas, a equipe do fundo monta o portfólio do Iratus, a partir daí, é feita a manutenção das posições através de outras muitas rodadas de discussão.</p>
                             
                             <div class="list-card-item">
-                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo" >
+                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo" width="23px">
                                 <h6 class="section-text item">Modelagem financeira para Valuation</h6>
                             </div>
                             <div class="list-card-item">
-                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo">
+                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo"  width="23px">
                                 <h6 class="section-text item">Gestão de portfólio</h6>
                             </div>
                            <div class="list-card-item">
-                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo">
+                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo"  width="23px">
                                 <h6 class="section-text item">Análise de tendências e formação de teses</h6>
                            </div>
                            
@@ -89,15 +89,15 @@
                             <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/aspas.svg" alt="logo" width="15px">
                             <p class="section-text texto">Nosso fundo simulado de participações. Através de documentos de parceiros, simula-se a relação de um fundo de private equity com o intermediário da venda, incluindo análise de teaser e infomemo e produção de checklists. </p>
                             <div class="list-card-item">
-                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo" >
+                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo" width="23px" >
                                 <h6 class="section-text item">Modelagem financeira para Valuation</h6>
                             </div>
                             <div class="list-card-item">
-                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo" >
+                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo" width="23px">
                                 <h6 class="section-text item">Análise de empresas privadas</h6>
                             </div>
                             <div class="list-card-item">
-                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo" >
+                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/hashtag.svg" alt="logo"width="23px" >
                                 <h6 class="section-text item">Produção de apresentações</h6>
                             </div>
                            
