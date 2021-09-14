@@ -33,10 +33,15 @@ $count =0;
                                                   
                             <div class="infos">
                                 <h6><?php the_category(', ');?></h6>
-                                <h4><?php if (strlen($post->post_title) > 60) {
-                                        echo substr(the_title($before = '', $after = '', FALSE), 0, 60) . '...'; } else {
+                                <h3>
+                                    <a href="<?php the_permalink() ?>" >
+                                        <?php if (strlen($post->post_title) > 45) {
+                                        echo substr(the_title($before = '', $after = '', FALSE), 0, 45) . '...'; } 
+                                        else {
                                         the_title();} 
-                                    ?></h4>
+                                        ?>
+                                    </a>
+                                </h3>
                                 <div class="date">
                                     <span class="material-icons">schedule</span>
                                     <h6>
@@ -82,13 +87,13 @@ $count =0;
                 <section class="section-categoria col-xl-12 col-12 row justify-content-between">
                     <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
                         <a href="<?php echo get_home_url() . "/category/geral"?>">
-                            <span class="material-icons">done</span>
+                            <span class="material-icons-outlined">done</span>
                             <h5>Geral</h5>
                         </a>   
                     </div>
                     <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
                         <a href="<?php echo get_home_url() . "/category/noticias"?>">
-                            <span class="material-icons">feedback</span>
+                            <span class="material-icons-outlined">feedback</span>
                             <h5>Notícias</h5>
                             <svg>
                             </svg>
@@ -96,13 +101,13 @@ $count =0;
                     </div>
                     <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
                         <a href="<?php echo get_home_url() . "/category/artigos"?>">
-                            <span class="material-icons">article</span>
+                            <span class="material-icons-outlined">article</span>
                             <h5>Artigos</h5>
                         </a>
                     </div>
                     <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
                         <a href="<?php echo get_home_url() . "/category/?"?>">
-                            <span class="material-icons">help</span>
+                            <span class="material-icons-outlined">help</span>
                             <h5>Icognita</h5>
                         </a>
                     </div>
