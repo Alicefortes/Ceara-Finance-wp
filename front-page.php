@@ -25,7 +25,7 @@
                     <p>O <span> Ceará Finance </span> foi fundado em 2018 com a missão de promover a relação entre a realidade do mercado financeiro e o cotidiano universitário cearense. <br> 
                     Os membros do Ceará Finance vêm estruturando uma entidade que busca não só sua própria capacitação através de aulas, projetos e mentorias, mas também o desenvolvimento da presença do mercado financeiro no Ceará, sempre buscando a valorização e reconhecimento do capital intelectual do estado.</p>
                 </div> 
-                <div class="col-md-4 numeros text-center">
+                <div class="col-md-4 numeros text-center ">
                     <div class="numeros-item">
                     <h4> <span class="material-icons-outlined">event_note</span></h4>  
                     <h4>4 Anos</h4>
