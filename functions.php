@@ -44,6 +44,23 @@ function css_files() {
     if ( is_category() == true ) {
         // só vai carregar se estiver em uma das categorias do blog
         wp_enqueue_style('categoria', get_template_directory_uri() . '/assets/css/categoria.css');
+        
+        //funcao para limitar excerpt no blog
+        function wpdocs_custom_excerpt_length( $length ) {
+            return 35;
+        }
+        add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+        //funcao para substituir o p por h6 no excerpt
+        function replace_tag($string){
+            $replace = array(
+                '<p>' => '<h6>',
+                '</p>' => '</h6>'
+            );
+            $string = str_replace(array_keys($replace), $replace, $string);
+            return $string;
+        }
+        add_filter('the_excerpt', 'replace_tag');
     }
 
     if ( is_single() == true ) {
@@ -64,5 +81,6 @@ function script_files(){
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js', array('popper'));
 }
 add_action('wp_enqueue_scripts', 'script_files');
+
 
 ?>

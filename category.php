@@ -43,23 +43,27 @@ $count =0;
                                     </a>
                                 </h3>
                                 <div class="date">
-                                    <span class="material-icons">schedule</span>
-                                    <h6>
-                                        <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-                                        date_default_timezone_set('America/Sao_Paulo');
-                                        echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
-                                    </h6>
-                                    <h6>
-                                    <?php $content = get_post_field( 'post_content', $post->ID );
-                                    $quantidade_palavras = str_word_count( strip_tags( $content ) );
-                                    $tempo_leitura = ceil($quantidade_palavras / 250);
-                                    if($tempo_leitura == 1){
-                                        echo $tempo_leitura." minuto de leitura";
-                                    }
-                                    else{
-                                        echo strval($tempo_leitura)." minutos de leitura";
-                                    }?>
-                                    </h6>
+                                    <div style="display:flex;" class="data">
+                                        <span class="material-icons">schedule</span>
+                                        <h6>
+                                            <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+                                            date_default_timezone_set('America/Sao_Paulo');
+                                            echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
+                                        </h6>
+                                    </div>
+                                    <div style="display:flex;">
+                                        <h6>
+                                        <?php $content = get_post_field( 'post_content', $post->ID );
+                                        $quantidade_palavras = str_word_count( strip_tags( $content ) );
+                                        $tempo_leitura = ceil($quantidade_palavras / 250);
+                                        if($tempo_leitura == 1){
+                                            echo $tempo_leitura." minuto de leitura";
+                                        }
+                                        else{
+                                            echo strval($tempo_leitura)." minutos de leitura";
+                                        }?>
+                                        </h6>
+                                    </div>
                                 </div>
                             </div>
                             <div class="teste">
@@ -104,9 +108,9 @@ $count =0;
                         </a>
                     </div>
                     <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
-                        <a href="<?php echo get_home_url() . "/category/?"?>">
-                            <span class="material-icons-outlined">help</span>
-                            <h5>Icognita</h5>
+                        <a href="<?php echo get_home_url() . "/category/eventos"?>">
+                            <span class="material-icons-outlined">event</span>
+                            <h5>Eventos</h5>
                         </a>
                     </div>
                 </section>
@@ -116,7 +120,7 @@ $count =0;
                 <div class="posts row">
                 <?php $query = new WP_Query($wp_query->query_vars);?>
                 <?php if($query->have_posts()): while($query->have_posts()): $query->the_post();?>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 postagens">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 postagens mt-3">
                     <a href="<?php echo $post->guid;?>">
                         <div class="banner">
                             <img class="thumb" <?php if(!has_post_thumbnail( $post->ID )){
@@ -140,9 +144,10 @@ $count =0;
                                         ?>
                                     </a>
                                 </h3>
-                                <div class="">
-                                    <h6 class="post-content"><?php the_excerpt();?></h6>
-                                    </h6>
+                                <div class="text-teste">
+                                    <a href="<?php the_permalink() ?>" >
+                                        <?php the_excerpt();?>
+                                    </a>
                                 </div>
                             </div>      
                         

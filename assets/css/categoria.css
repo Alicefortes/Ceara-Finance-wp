@@ -52,7 +52,7 @@ a{
     position: relative;
     overflow: hidden;
     color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     z-index: 0;
 }
 
@@ -90,10 +90,28 @@ a{
     top: 65%;
 }
 
+@media(max-width:500px){
+    .postagens .infos{
+        margin-right: 0rem!important;
+        margin-left: 0rem!important;
+    }
+}
+
+@media(min-width:501px) and (max-width:767px){
+    .postagens .infos{
+        margin-right: 3rem!important;
+        margin-left: 3rem!important;
+    }
+}
+
 @media(max-width:767px){
     .postagens .banner img{
-        height: 450px !important;
-        width: 450px !important;
+        height: 420px !important;
+        width: 420px !important;
+    }
+
+    .segundo .infos .date{
+        display: block;
     }
 }
 
@@ -123,6 +141,9 @@ a{
         height: 320px;
         width: 320px ;
     }
+    .postagens .infos{
+        margin-right: 1.5rem;
+    }
 }
 
 @media(max-width:1199px){
@@ -142,6 +163,16 @@ a{
         height: 280px;
         width: 280px;
     }
+
+    .postagens .infos{
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:1199px) and (min-width:991px) {
+    .segundo .infos .date{
+        display: block;
+    }
 }
 
 @media(min-width:1200px){
@@ -159,11 +190,16 @@ a{
         height: 350px;
         width: 350px;
     }
+
+    .postagens .infos{
+        margin-right: 2rem;
+    }
 }
 
 @media(max-width: 1399px) and (min-width: 991px){
     .postagens .infos{
         margin-left: 0.5rem!important;
+        margin-right: 0.5rem;
     }
 }
 
@@ -186,7 +222,7 @@ a{
     position: relative;
     /*filter: contrast(0.5);*/
     z-index: -1;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .segundo .infos{
@@ -194,6 +230,10 @@ a{
     width: auto;
     margin-left: 1.5rem;
 }
+
+.date .data{
+    margin-right: 1rem;
+    }
 
 .primeiro .infos{
     margin-left: 0.5rem;
@@ -205,8 +245,12 @@ a{
 }
 
 .segundo .infos h6{
-    margin-top:0.5rem;
+    margin-top:0.1rem;
     margin-bottom: 1rem;
+}
+
+.primeiro .data>span{
+    margin-top: -0.1rem;
 }
 
 .date>h6:nth-child(2){
@@ -252,7 +296,7 @@ a{
     position: relative;
     /*filter: contrast(0.5);*/
     z-index: -1;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .postagens .infos{
@@ -277,6 +321,10 @@ a{
 
 }
 
+.text-teste{
+    text-align: justify;
+}
+
 .carrossel-posts{
     flex-direction: column;
 }
@@ -299,6 +347,10 @@ a{
     margin-left: 0.5rem;
 }
 
+.carrossel-posts .page-numbers:hover{
+    color: #FDD835;
+}
+
 .carrossel-posts a:last-child{
     padding: 0;
     background-color: #FAFAFA;
@@ -310,6 +362,12 @@ a{
     background-color: #FAFAFA;
     box-shadow: none;
 }
+
+.carrossel-posts a:last-child:hover,
+.carrossel-posts a:first-child:hover{
+    color: #FDD835;
+}
+
 .carrossel-posts span.page-numbers.current{
     color: #fff;
     background-color: #FDD835;
