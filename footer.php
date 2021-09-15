@@ -14,7 +14,9 @@
             <a href="#"><p></p></a>
             <?php if ( is_front_page() == true ){
                 echo '
-                    
+                <a href="#"><p>Quem somos nós</p></a>
+                <a href="#"><p>Nossos Parceiros</p></a>
+                <a href="#"><p>Entre em contato</p></a> 
                 ';
             }?>
             <?php if ( is_page('projetos') == true ){
@@ -26,12 +28,16 @@
             }?>
             <?php if ( is_page('equipe') == true ){
                 echo '
-                    
+                <a href="#"><p>Diretoria</p></a>
+                <a href="#"><p>Analistas Sêniores</p></a>
+                <a href="#"><p>Analistas Juniores</p></a>
                 ';
             }?>
             <?php if ( is_category() == true ){
                 echo '
-                    
+                <a href="#"><p>Blog</p></a>
+                <a href="#"><p>Categorias</p></a>
+                <a href="#"><p>Últimas notícias</p></a> 
                 ';
             }?>
         </div>
@@ -43,7 +49,7 @@
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/ ></svg></a>
                </div>
                 <div class="redes-txt">
-                <p>Rua Humberto Monte, Fortaleza, Ceará 6000, Br</p>
+                <p>Rua Humberto Monte 6000, Fortaleza, Ceará, Br</p>
                 </div>
             </div>
 
