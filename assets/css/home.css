@@ -75,37 +75,34 @@ p{
 .material-icons-outlined{
     font-size: 2.5rem;
 }
-
-.cards-flex{
-    margin: 0 1rem 2rem 0;
-    display: flex;
+.mvv{
+    margin-bottom: 2rem;
 }
-.card{
+.mvv-item{
     margin: 0 auto;
-    width: 30%;
+    padding: 1rem 0.5rem 1rem 1rem;
     background-color: #181818;
     color: #fff;
     border-radius: .8rem;
+    height: 41vh;
     
 }
-.card-title h4{
-    margin: 1rem 0 .5rem 1rem;
-}
-.card-text p{
-    font-size: .8rem;
-    margin: 0 .6rem 1rem 1rem ;
+.mvv-item p{
+    font-size: 1rem;
 }
 
-@media(max-width:1050px){
-    .numeros{
-       flex-direction: column;
-   }
-   .cards-flex{
-    align-items: center;   
-    flex-direction: column;
-   }
-   .card{
-       width: 100%;
-       margin-bottom: 2rem;
-   }
+@media(max-width:1200px){
+    .mvv-item{
+        height: 30vh;
+    }
+}
+@media(max-width:800px){
+    .mvv-item{
+        height:35vh ;
+    }
+}
+@media(max-width:450px){
+    .mvv-item{
+        height: 65vh;
+    }
 }
