@@ -18,14 +18,6 @@ a{
     background-color:#FAFAFA;
 }
 
-.section-categoria{
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
-}
-
 .categoria-item{
     background-color: white;
     border-radius: 8px;
@@ -56,7 +48,7 @@ a{
 
 .primeiro .banner{
     width: auto;
-    height: 95%;
+    height: 100%;
     position: relative;
     overflow: hidden;
     color: #fff;
@@ -72,6 +64,7 @@ a{
     left: 0vw;
     /*filter: contrast(0.5);*/
     z-index: -1;
+   
 }
 .primeiro .infos{
     /*
@@ -97,18 +90,38 @@ a{
     top: 65%;
 }
 
+@media(max-width:767px){
+    .postagens .banner img{
+        height: 450px !important;
+        width: 450px !important;
+    }
+}
+
 @media(max-width:991px){
+    .primeiro{
+        margin-bottom: 2rem;
+    }
+
     .primeiro .infos{
         margin-top: 67%;
     }
     .primeiro .banner{
-        height: 400px;
-        width: 400px;
+        height: 100%!important;
+        width: 100%!important;
+    }
+
+    .primeiro .thumb{
+        height: 100%!important;
+        width: 100%!important;
     }
 
     .segundo .banner>a>img{
         height: 200px;
         width: 200px;
+    }
+    .postagens .banner img{
+        height: 320px;
+        width: 320px ;
     }
 }
 
@@ -116,11 +129,21 @@ a{
     .primeiro .infos{
         margin-top: 68%;
     }
+
+    .primeiro .banner{
+        height: 450px;
+        width: 450px;
+    }
     .segundo .banner>a>img{
         height: 210px;
         width: 210px;
     }
+    .postagens .banner img{
+        height: 280px;
+        width: 280px;
+    }
 }
+
 @media(min-width:1200px){
     .primeiro .banner{
         height: 500px;
@@ -131,7 +154,19 @@ a{
         height: 235px;
         width: 235px;
     }
+
+    .postagens .banner img{
+        height: 350px;
+        width: 350px;
+    }
 }
+
+@media(max-width: 1399px) and (min-width: 991px){
+    .postagens .infos{
+        margin-left: 0.5rem!important;
+    }
+}
+
 
 .segundo a>div,
 .segundo>a{
@@ -140,8 +175,6 @@ a{
 
 .segundo .banner{
     display: flex;
-    width: auto;
-    height: 45%;
     position: relative;
     color: #fff;
     z-index: 0;
@@ -188,19 +221,97 @@ a{
     margin-top: 0.3rem;
 }
 
-.infos a{
+.ultimos .infos a{
     color: whitesmoke;
 }
 
-.infos a:nth-child(n+2):hover{
+.ultimos .infos a:nth-child(n+2):hover{
     font-weight: 700;
     color:#FDD835 ;
     
 }
 
-.infos a:nth-child(1):hover{
+.ultimos .infos a:nth-child(1):hover{
     color:#FDD835 ;
     transition: all 1s ease;
 
+}
+
+.postagens .banner{
+    display: flex;
+    position: relative;
+    width: auto;
+    color: #fff;
+    z-index: 0;
+    justify-content: center;
+}
+
+.postagens .thumb{
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    /*filter: contrast(0.5);*/
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.postagens .infos{
+    z-index: 1;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.posts .infos a{
+    color: black;
+}
+
+.posts .infos a:nth-child(n+2):hover{
+    font-weight: 700;
+    color:#FDD835 ;
+    
+}
+
+.posts .infos a:nth-child(1):hover{
+    color:#FDD835 ;
+    transition: all 0.5s ease;
+
+}
+
+.carrossel-posts{
+    flex-direction: column;
+}
+
+.carrossel-posts>*{
+    display: inline-block;
+}
+
+.carrossel-posts a,
+.carrossel-posts .page-numbers{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    box-shadow: 0 8px 24px rgba(112, 144, 176, 0.15);
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: black;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.carrossel-posts a:last-child{
+    padding: 0;
+    background-color: #FAFAFA;
+    box-shadow: none;
+}
+
+.carrossel-posts a:first-child{
+    padding: 0;
+    background-color: #FAFAFA;
+    box-shadow: none;
+}
+.carrossel-posts span.page-numbers.current{
+    color: #fff;
+    background-color: #FDD835;
 }
 
