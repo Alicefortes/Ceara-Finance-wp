@@ -116,21 +116,21 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-4">
+                <div class="col-xl-4">
                     <div class="equity-research-item">
                         <h3><span class="material-icons-outlined">savings</span></h3>
                         <h4>1</h4>
                         <p>Construção de uma tese de investimentos. </p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4">
                     <div class="equity-research-item">
                         <h3><span class="material-icons-outlined">poll</span></h3>
                         <h4>2</h4>
                         <p>Produção de apresentações de nível altíssimo de qualidade.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4">
                     <div class="equity-research-item">
                         <h3><span class="material-icons-outlined">trending_up</span></h3>
                         <h4>3</h4>

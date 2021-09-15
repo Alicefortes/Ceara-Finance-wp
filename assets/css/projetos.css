@@ -89,6 +89,7 @@ p{
     /* ver depois tamanho em porcentagem para responsividade*/
     width: 22.5rem;
     margin: auto;
+    height: auto;
 }
 .cardsflex {
     display: flex;
