@@ -20,7 +20,7 @@
 .newsletter .col-xl-6{
     margin: 2rem auto 2rem auto;
 }
-.newsletter a{
+.newsletter button{
     text-decoration: none;
     color: #FFFFFF;
     font-weight: bold;

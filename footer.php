@@ -11,8 +11,8 @@
                 <p>Se inscreva na nossa Newsletter <br>
                 <span>Tenha tudo na palma da sua mão</span>
                 </p>
-              
-                <button type="button"><a href="https://gmail.us4.list-manage.com/subscribe?u=5e918c658962181f2aa6fcd4d&id=d0912b68be">Inscreva</a></button>
+                <a href="https://gmail.us4.list-manage.com/subscribe?u=5e918c658962181f2aa6fcd4d&id=d0912b68be" target="_blank"><button type="button">Inscreva</button></a>
+                
             </div>
         </div>
     </div>
