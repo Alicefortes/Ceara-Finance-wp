@@ -1,4 +1,24 @@
 <?php wp_footer(); ?>
+<section>
+    <div class="container-fluid newsletter">  
+        <div class="row justify-content-center align-items-center">
+            <div class="imagem col-xl-6">
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/ilustra-newsletter.svg" alt="Ilustração">  
+            </div>
+            <div class="col-xl-6 content">
+                <p>Ceará Finance semanalmente</p>
+                <h2>Conteúdo <br> exclusivo</h2>
+                <p>Se inscreva na nossa Newsletter <br>
+                <span>Tenha tudo na palma da sua mão</span>
+                </p>
+              
+                <button type="button"><a href="https://gmail.us4.list-manage.com/subscribe?u=5e918c658962181f2aa6fcd4d&id=d0912b68be">Inscreva</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
 <footer>
 <div class="container">
     <div class="row justify-content-center rodape ">
