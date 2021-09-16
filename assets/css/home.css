@@ -93,16 +93,6 @@ p{
 
 @media(max-width:1200px){
     .mvv-item{
-        height: 30vh;
-    }
-}
-@media(max-width:800px){
-    .mvv-item{
-        height:35vh ;
-    }
-}
-@media(max-width:450px){
-    .mvv-item{
-        height: 65vh;
+        height: auto;
     }
 }
