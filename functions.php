@@ -73,7 +73,6 @@ function css_files() {
 }
 add_action('wp_enqueue_scripts', 'css_files');
 
-
 function script_files(){
 
     wp_enqueue_script('jquery'); 

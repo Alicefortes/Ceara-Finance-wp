@@ -36,3 +36,55 @@
     /*filter: contrast(0.5);*/
     margin-top: -4rem;
 }
+
+.card-owl{
+    display:flex; 
+    justify-content:center;
+}
+
+.section-member{
+    position: relative;
+    color: #fff;
+    z-index: 0;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.member-banner{
+    display: flex;
+    position: relative;
+    color: #fff;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-member{
+    display: flex;
+    justify-content: center;
+}
+
+.member{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+}
+
+.member-thumb{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /*filter: contrast(0.5);*/
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
