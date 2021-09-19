@@ -86,7 +86,7 @@
                     
                     <div class="formulario">
                         <h5>Entre em contato</h5>
-                    <?php echo do_shortcode( '[contact-form-7 id="61" title="Formulario de contato"]');?>
+                    <?php echo do_shortcode( '[contact-form-7 id="10" title="Formulario de contato"]');?>
                     </div>
                 
             </div>
@@ -137,6 +137,50 @@
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                 </svg></a>
             </div>
+            </div>
+        </div>
+    </div>
+    <!--Parceiros-->
+    <div class="container">
+        <div>
+            <h1>Nossos Parceiros</h1>
+        </div>
+        <div class="row">
+            <div class="loop owl-carousel owl-theme">
+                <?php
+                    # mostrar os parceiros criados pelo admin
+                    $args = array (
+                    'post_type' => 'parceiro'
+                    );
+                    $tech_posts = new WP_Query($args);
+                    if($tech_posts->have_posts()) :
+                ?>
+                <?php while ($tech_posts->have_posts()) : $tech_posts->the_post(); ?>
+                <div class="item card-owl col-12 mt-5 mb-5"> 
+                    <div class="member col-12">
+                        <div class="section-member">
+                            <div class="img-member">
+                                <div class="member-banner col-xl-12 col-lg-12 col-md-12"> 
+                                    <img class="member-thumb" <?php if(!has_post_thumbnail( $post->ID )){
+                                            echo "no-thumbnail";
+                                        }?>" 
+                                        src="<?php if(has_post_thumbnail( $post->ID )){
+                                            echo get_the_post_thumbnail_url($post->ID);
+                                        }
+                                            else{
+                                                echo get_template_directory_uri()."/assets/images/logo2.svg";
+                                            }?>" alt="Noticia">
+                                </div>
+                            </div>
+                            <div class="infos">
+                                <?php the_content();?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endwhile; ?>
+                <?php endif;?>
+                <?php wp_reset_postdata();?>
             </div>
         </div>
     </div>

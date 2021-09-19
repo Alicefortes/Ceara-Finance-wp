@@ -2,6 +2,7 @@
 
 require_once(get_template_directory().'/inc/class-nav-bootstrap-walker.php');
 require_once(get_template_directory().'/inc/membros.php');
+require_once(get_template_directory().'/inc/parceiros.php');
 
 function my_theme_setup(){
 
@@ -78,21 +79,17 @@ function script_files(){
     wp_enqueue_script('jquery'); 
     wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js', array('jquery'));
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js', array('popper'));
-    wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/inc/owl/owl.carousel.min.js');
-    wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/inc/owl/owl.carousel.min.js');
-    wp_enqueue_script( 'owl-carousel-init-js', get_template_directory_uri() . '/inc/owl/owl.carouselinit.js');
+    if ( is_page('equipe') == true ) {
+        wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/inc/owl/owl.carousel.min.js');
+        wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/inc/owl/owl.carousel.min.js');
+        wp_enqueue_script( 'owl-carousel-init-js', get_template_directory_uri() . '/inc/owl/owl.carouselinit.js');
+    }
+    if ( is_front_page() == true ) {
+        wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/inc/owl/owl.carousel.min.js');
+        wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/inc/owl/owl.carousel.min.js');
+        wp_enqueue_script( 'owl-carousel-init-js', get_template_directory_uri() . '/inc/owl/owl.carouselinithome.js');
+    }
 }
 add_action('wp_enqueue_scripts', 'script_files');
 
-
-function agencyclix_add_owlcarousel() {
-wp_enqueue_script ( 'jquery' );
-wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/inc/owl/owl.carousel.js', array( 'jquery' ), false, true );
-wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/inc/owl/owl.carousel.min.js', array( 'jquery' ));
-wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/inc/owl/owl.carousel-init.js', array( 'jquery' ), false, true );
-wp_enqueue_style( 'owlcarousel-style', get_template_directory_uri() . '/inc/owl/owl.carousel.css' );
-wp_enqueue_style( 'owlcarousel-style', get_template_directory_uri() . '/inc/owl/owl.theme.css' );
-wp_enqueue_style( 'owlcarousel-style', get_template_directory_uri() . '/inc/owl/owl.transitions.css' );
-}
-add_action( 'wp_enqueue_scripts', 'agencyclix_add_owlcarousel' );
 ?>
