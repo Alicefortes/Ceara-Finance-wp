@@ -90,9 +90,127 @@ p{
 .mvv-item p{
     font-size: 1rem;
 }
+/* Contato */
+.contato{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    
+}
+.contato a{
+    color: #000000;
+}
+.form h1{
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.form p{
+    margin-bottom: 2rem;
+}
+.formulario{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
+    margin-right: 2rem;
+}
+
+.formulario h5{
+    text-align: center;
+    font-weight: 700;
+}
+.formulario label{
+    margin: -1.5rem 0 -2rem 0;
+}
+.formulario .mensagem, .formulario .nome, .formulario .email{
+    width: 100%;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 2rem ;
+    font-size:.8rem ;
+    box-shadow: 0px .5rem 1.2rem rgba(41, 41, 42, 0.08);;
+
+}
+ .mensagem{
+    resize: none;
+ }
+.formulario .botao_form{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: auto;
+    background-color: #E6CE1D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 3.6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px .5rem 1.2rem rgba(41, 41, 42, 0.08);
+}
+
+.formulario .mensagem:focus, .formulario .nome:focus, .formulario .email:focus{
+    padding-left: 0.5rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.infos{
+    margin: auto;
+    text-align: center;
+}
+.infos p{
+    font-size: .8rem;
+    padding-top:.5rem ;
+}
+.mapa{
+    width: 60%;
+    margin: auto;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+.social a{
+    cursor: pointer;
+}
+
 
 @media(max-width:1200px){
-    .mvv-item{
-        height: auto;
+    .formulario {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        
+    }
+    .mapa{
+        width: 90%;
+        margin: auto;
+    }
+  
+}
+@media (max-width:900px) {
+    .formulario {
+        width: 70%;
+    }
+    
+}
+@media (max-width:600px) {
+    .infos{
+        width: 80%;
+        flex-direction: column;
+    }
+    .formulario {
+        width: 100%;
     }
 }
+
