@@ -5,7 +5,7 @@ function create_membro_cpt() {
 	$labels = array(
 		'name' => _x( 'membros', 'Post Type General Name', 'ceara-finance' ),
 		'singular_name' => _x( 'membro', 'Post Type Singular Name', 'ceara-finance' ),
-		'menu_name' => _x( 'membros', 'Admin Menu text', 'ceara-finance' ),
+		'menu_name' => _x( 'Membros', 'Admin Menu text', 'ceara-finance' ),
 		'name_admin_bar' => _x( 'membro', 'Add New on Toolbar', 'ceara-finance' ),
 		'archives' => __( 'membro Archives', 'ceara-finance' ),
 		'attributes' => __( 'membro Attributes', 'ceara-finance' ),

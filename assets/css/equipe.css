@@ -44,47 +44,52 @@
 
 .section-member{
     position: relative;
-    color: #fff;
     z-index: 0;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .member-banner{
     display: flex;
     position: relative;
-    color: #fff;
     z-index: 0;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .img-member{
     display: flex;
     justify-content: center;
 }
-
-.member{
+.member,
+.member2{
     display: flex;
-    background-color: blue;
+    background-color: #FFFFFF;
     justify-content: center;
     text-align: center;
-    width: 80%;
-    height: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    border-radius: 10px;
+}
+
+.member{
+    width: 90%;
+}
+
+.member2{
+    width: 100%;
 }
 
 .member-thumb{
     object-fit: cover;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     position: relative;
     /*filter: contrast(0.5);*/
     z-index: -1;
     border-radius: 10px;
 }
-
-

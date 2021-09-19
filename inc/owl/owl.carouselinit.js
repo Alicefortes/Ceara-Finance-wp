@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
     jQuery('.owl-carousel').owlCarousel({
         loop:false,
-        margin:10,
+        margin:0,
         autoplay:true,
         responsiveClass:true,
         responsive:{
@@ -9,15 +9,18 @@ jQuery(document).ready(function(){
                 items:1,
                 nav:true
             },
-            600:{
+            576:{
                 items:2,
                 nav:true
             },
-            1000:{
+            992:{
+                items:3,
+                nav:true
+            },
+            1200:{
                 items:4,
                 nav:true,
             }
         }
     });
 });
-
