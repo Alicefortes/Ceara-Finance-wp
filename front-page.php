@@ -77,11 +77,13 @@
     </div>
     <!--Contato-->
     <div class="container">
-        <div class="row justify-content-center align-items-center contato ">
-            
-            <div class="col-xl-4 form">
+        <div class="row justify-content-center  contato ">
+            <div class="col-xl-12 contato-title">
                     <h1>Entre em contato</h1>
                     <p>O Ceará Finance está de portas abertas para seu contato.</p>
+            </div>
+            <div class="col-xl-4 form">
+                    
                     <div class="formulario">
                         <h5>Entre em contato</h5>
                     <?php echo do_shortcode( '[contact-form-7 id="61" title="Formulario de contato"]');?>
