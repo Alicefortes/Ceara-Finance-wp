@@ -47,7 +47,7 @@ p{
 /*Sobre*/
 
 .sobre{
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 .sobre .section-title h1{
     padding-bottom: 1.8rem;
@@ -192,7 +192,7 @@ p{
 }
 /* Contato */
 .contato{
-    margin-top: 3rem;
+    padding-top: 4rem;
     margin-bottom: 2rem;
     
 }
@@ -288,15 +288,16 @@ p{
     margin: auto;
 }
 
-.social{
+.social-f{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     margin-top: 1rem;
 }
-.social a{
+.social-f a{
     cursor: pointer;
+    margin-right: 22px;
 }
 
 
@@ -332,5 +333,8 @@ p{
         width: 100%;
     }
 }
+
+
+/* PARCEIROS */
 
 

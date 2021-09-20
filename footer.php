@@ -24,40 +24,39 @@
     <div class="row justify-content-center rodape ">
         <div class="col rodape-item">
             <h4>Páginas</h4>
-            <a href="#"><p>Home</p></a>
-            <a href="#"><p>Projetos</p></a>
-            <a href="#"><p>Equipe</p></a>
-            <a href="#"><p>Blog</p></a>
+            <a href="<?php echo get_home_url() . "/"?>"><p>Home</p></a>
+            <a href="<?php echo get_home_url() . "/projetos"?>"><p>Projetos</p></a>
+            <a href="<?php echo get_home_url() . "/equipe"?>"><p>Equipe</p></a>
+            <a href="<?php echo get_home_url() . "/category/geral"?>"><p>Blog</p></a>
         </div>
         <div class="col rodape-item">
             <h4>Seções</h4>
             <a href="#"><p></p></a>
             <?php if ( is_front_page() == true ){
                 echo '
-                <a href="#"><p>Quem somos nós</p></a>
-                <a href="#"><p>Nossos Parceiros</p></a>
-                <a href="#"><p>Entre em contato</p></a> 
+                <a href="#sobre"><p>Quem somos nós</p></a>
+                <a href="#parceiros"><p>Nossos Parceiros</p></a>
+                <a href="#contato"><p>Entre em contato</p></a> 
                 ';
             }?>
             <?php if ( is_page('projetos') == true ){
                 echo '
-                    <a href="#"><p>CF Educação</p></a>
-                    <a href="#"><p>CF Asset Management</p></a>
-                    <a href="#"><p>CF Equity Research</p></a>
+                    <a href="#educacao"><p>CF Educação</p></a>
+                    <a href="#asset"><p>CF Asset Management</p></a>
+                    <a href="#equity"><p>CF Equity Research</p></a>
                 ';
             }?>
             <?php if ( is_page('equipe') == true ){
                 echo '
-                <a href="#"><p>Diretoria</p></a>
-                <a href="#"><p>Analistas Sêniores</p></a>
-                <a href="#"><p>Analistas Juniores</p></a>
+                <a href="#diretoria"><p>Diretoria</p></a>
+                <a href="#analistas"><p>Analistas</p></a>
                 ';
             }?>
             <?php if ( is_category() == true ){
                 echo '
-                <a href="#"><p>Blog</p></a>
-                <a href="#"><p>Categorias</p></a>
-                <a href="#"><p>Últimas notícias</p></a> 
+                <a href="#ultimas"><p>Últimas notícias</p></a>
+                <a href="#categorias"><p>Categorias</p></a>
+                <a href="#blog"><p>Blog</p></a> 
                 ';
             }?>
         </div>
