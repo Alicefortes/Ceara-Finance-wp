@@ -75,6 +75,50 @@
             
         </div>
     </div>
+    <!--Parceiros-->
+    <div class="container">
+        <div>
+            <h1>Nossos Parceiros</h1>
+        </div>
+        <div class="row">
+            <div class="loop owl-carousel owl-theme">
+                <?php
+                    # mostrar os parceiros criados pelo admin
+                    $args = array (
+                    'post_type' => 'parceiro'
+                    );
+                    $tech_posts = new WP_Query($args);
+                    if($tech_posts->have_posts()) :
+                ?>
+                <?php while ($tech_posts->have_posts()) : $tech_posts->the_post(); ?>
+                <div class="item card-owl col-12 mt-5 mb-5"> 
+                    <div class="member col-12">
+                        <div class="section-member">
+                            <div class="img-member">
+                                <div class="member-banner col-xl-12 col-lg-12 col-md-12"> 
+                                    <img class="member-thumb" <?php if(!has_post_thumbnail( $post->ID )){
+                                            echo "no-thumbnail";
+                                        }?>" 
+                                        src="<?php if(has_post_thumbnail( $post->ID )){
+                                            echo get_the_post_thumbnail_url($post->ID);
+                                        }
+                                            else{
+                                                echo get_template_directory_uri()."/assets/images/logo2.svg";
+                                            }?>" alt="Noticia">
+                                </div>
+                            </div>
+                            <div class="infos">
+                                <?php the_content();?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endwhile; ?>
+                <?php endif;?>
+                <?php wp_reset_postdata();?>
+            </div>
+        </div>
+    </div>
     <!--Contato-->
     <div class="container">
         <div class="row justify-content-center  contato ">
@@ -140,49 +184,6 @@
             </div>
         </div>
     </div>
-    <!--Parceiros-->
-    <div class="container">
-        <div>
-            <h1>Nossos Parceiros</h1>
-        </div>
-        <div class="row">
-            <div class="loop owl-carousel owl-theme">
-                <?php
-                    # mostrar os parceiros criados pelo admin
-                    $args = array (
-                    'post_type' => 'parceiro'
-                    );
-                    $tech_posts = new WP_Query($args);
-                    if($tech_posts->have_posts()) :
-                ?>
-                <?php while ($tech_posts->have_posts()) : $tech_posts->the_post(); ?>
-                <div class="item card-owl col-12 mt-5 mb-5"> 
-                    <div class="member col-12">
-                        <div class="section-member">
-                            <div class="img-member">
-                                <div class="member-banner col-xl-12 col-lg-12 col-md-12"> 
-                                    <img class="member-thumb" <?php if(!has_post_thumbnail( $post->ID )){
-                                            echo "no-thumbnail";
-                                        }?>" 
-                                        src="<?php if(has_post_thumbnail( $post->ID )){
-                                            echo get_the_post_thumbnail_url($post->ID);
-                                        }
-                                            else{
-                                                echo get_template_directory_uri()."/assets/images/logo2.svg";
-                                            }?>" alt="Noticia">
-                                </div>
-                            </div>
-                            <div class="infos">
-                                <?php the_content();?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php endwhile; ?>
-                <?php endif;?>
-                <?php wp_reset_postdata();?>
-            </div>
-        </div>
-    </div>
+    
 <main>
 <?php get_footer(); ?>

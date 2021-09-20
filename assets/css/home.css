@@ -90,6 +90,106 @@ p{
 .mvv-item p{
     font-size: 1rem;
 }
+
+/* PARCEIROOOOS */
+.owl-carousel .owl-item.big div {
+    transition: all 1s ease-out;
+}
+/* Parceiros que ficam atrás*/
+.owl-carousel .owl-item.medium-left div {
+    transform: scale(0.9) !important;
+    filter: opacity(0.9);
+    
+}
+    
+.owl-carousel .owl-item.medium-right div {
+    transform: scale(0.9) !important;
+    filter: opacity(0.9);
+    
+}
+.owl-carousel .owl-item img{
+    width: 50%;
+}
+.card-owl{
+    display:flex; 
+    justify-content:center;
+  
+}
+.section-member{
+    margin: 1rem;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+}
+
+.member-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-member{
+    display: flex;
+    justify-content: center;
+    width: 0;
+    
+}
+
+.member{
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    border-radius: 10px;
+}
+
+.member-thumb{
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    border-radius: 10px;
+}
+.owl-carousel .owl-item img {
+    width: auto;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+.infos p {
+    font-size: .8rem;
+    padding: 0 1rem 0 1rem;
+}
+/* nav para telas pequenas*/
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -3rem;
+}
+.owl-nav button{
+    width: 2rem;
+}
+.owl-carousel button span{
+    font-size: 3.5rem;
+}
 /* Contato */
 .contato{
     margin-top: 3rem;
@@ -153,7 +253,28 @@ p{
     border: 0 none;
     outline: 0;
 }
-
+.wpcf7 .ajax-loader{
+  margin: auto;
+  margin-top: 1rem ;
+  margin-bottom: 1rem;
+  display: block;
+  background-color:  rgba(24, 24, 24, 1);
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    text-align: center;
+    width: 80%;
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: .5rem;
+    background-color: rgb(163, 207, 163);
+    box-shadow: 0px .5rem 1.2rem rgba(41, 41, 42, 0.08);
+    border: none;
+    margin: auto;
+    margin-bottom: 2rme;
+    
+}
 .infos{
     margin: auto;
     text-align: center;
@@ -213,67 +334,3 @@ p{
 }
 
 
-/* PARCEIROOOOS */
-.owl-carousel .owl-item.big div {
-    transition: all 1s ease-out;
-}
-
-.owl-carousel .owl-item.medium-left div {
-    transform: scale(0.9) !important;
-    filter: opacity(0.9);
-    
-}
-    
-.owl-carousel .owl-item.medium-right div {
-    transform: scale(0.9) !important;
-    filter: opacity(0.9);
-    
-}
-
-.card-owl{
-    display:flex; 
-    justify-content:center;
-}
-
-.section-member{
-    position: relative;
-    z-index: 0;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.member-banner{
-    display: flex;
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.img-member{
-    display: flex;
-    justify-content: center;
-}
-
-.member{
-    display: flex;
-    background-color: #FFFFFF;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    box-shadow: 0px 10px 20px 0px #0000001A;
-    border-radius: 10px;
-}
-
-.member-thumb{
-    object-fit: cover;
-    width: 100%;
-    position: relative;
-    z-index: -1;
-    border-radius: 10px;
-}
