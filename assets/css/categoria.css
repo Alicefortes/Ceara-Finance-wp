@@ -12,10 +12,15 @@ a{
     z-index: -5;
     color: white;
     height: auto;
+    padding-top: 4rem;
 }
 
 .catepost{
     background-color:#FAFAFA;
+}
+
+#categorias{
+    padding-top: 4rem;
 }
 
 .categoria-item{
@@ -44,6 +49,10 @@ a{
 .categoria-item>a:hover>span,
 .categoria-item>a:hover>h5{
     color: #FDD835;
+}
+
+#blog{
+    padding-top: 4rem;
 }
 
 .primeiro .banner{

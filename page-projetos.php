@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <div class="educacao">
+    <div class="educacao" id="educacao">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 section-title">
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="asset-management" >
+    <div class="asset-management" id="asset">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 section-title">
@@ -107,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="equity-research">
+    <div class="equity-research" id="equity">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 section-title">

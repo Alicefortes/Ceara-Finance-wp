@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+h1{
+    font-weight: 800;
+}
+
 .banner{
     width: 100%;
     height: 34rem;
@@ -35,6 +39,14 @@
     z-index: -2;
     /*filter: contrast(0.5);*/
     margin-top: -4rem;
+}
+
+#diretoria{
+    padding-top: 4rem;
+}
+
+#analistas{
+    padding-top: 3rem;
 }
 
 .card-owl{
