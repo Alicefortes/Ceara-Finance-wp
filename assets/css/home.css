@@ -107,13 +107,11 @@ p{
     filter: opacity(0.9);
     
 }
-.owl-carousel .owl-item img{
-    width: 50%;
-}
 .card-owl{
     display:flex; 
     justify-content:center;
-  
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px #0000001A;
 }
 .section-member{
     margin: 1rem;
@@ -137,12 +135,13 @@ p{
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 10px;
+    
 }
 
 .img-member{
+
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: auto;
     margin: auto;
     max-width: 100%;
@@ -159,8 +158,8 @@ p{
     width: 90%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    box-shadow: 0px 10px 20px 0px #0000001A;
-    border-radius: 10px;
+    
+    
 }
 
 .member-thumb{
@@ -168,14 +167,9 @@ p{
     width: 100%;
     position: relative;
     z-index: -1;
-    border-radius: 10px;
+    
 }
-.owl-carousel .owl-item img {
-    width: auto;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-}
+
 .parceiros .infos p {
     font-size: .8rem;
     padding: 0 1rem 0 1rem;
