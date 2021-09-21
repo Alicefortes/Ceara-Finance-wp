@@ -80,7 +80,7 @@
         <div>
             <h1>Nossos Parceiros</h1>
         </div>
-        <div class="row">
+        <div class="row parceiros">
             <div class="loop owl-carousel owl-theme">
                 <?php
                     # mostrar os parceiros criados pelo admin

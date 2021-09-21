@@ -40,7 +40,12 @@ h1{
     /*filter: contrast(0.5);*/
     margin-top: -4rem;
 }
-
+#diretoria h1{
+    margin-bottom:2rem;
+}
+#diretoria h2, #analistas h2{
+    font-weight: 700;
+}
 #diretoria{
     padding-top: 4rem;
 }
@@ -86,6 +91,7 @@ h1{
     padding-bottom: 2rem;
     box-shadow: 0px 10px 20px 0px #0000001A;
     border-radius: 10px;
+    height: 32rem;
 }
 
 .member{
@@ -104,4 +110,17 @@ h1{
     /*filter: contrast(0.5);*/
     z-index: -1;
     border-radius: 10px;
+}
+.infos{
+    padding: 1rem;
+}
+.infos p{
+    max-width: 500px; 
+    line-height: 22px;     
+    max-height: 44px;   
+    overflow: hidden; 
+
+}
+.infos svg{
+    color: #000000;
 }

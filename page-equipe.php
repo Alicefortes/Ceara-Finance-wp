@@ -24,7 +24,7 @@
         <div class="row">
             <div id="diretoria">
                 <h1>Conheça a Ceará Finance</h1>
-                <h2>Diretoria</h2>
+                <h2 class="text-center">Diretoria</h2>
                 <div class="owl-carousel owl-theme">
                     <?php
                         # teste para mostrar os membros criados pelo admin
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div id="analistas">
-                <h2>Analistas</h2>
+                <h2 class="text-center">Analistas</h2>
                 <div class="row mt-5 mb-5" style="display:flex; margin-left: 0px; margin-top: 1rem;">
                 
                     <?php
