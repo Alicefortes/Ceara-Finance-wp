@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
     jQuery('.owl-carousel').owlCarousel({
-        loop:false,
+        loop:true,
         margin:0,
         autoplay:true,
         responsiveClass:true,

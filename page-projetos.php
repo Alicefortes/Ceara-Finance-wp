@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main>
+    <!--Banner-->
     <div class="banner">
         <video width="100%" autoplay muted loop id="video-back">
             <source src="<?php echo get_bloginfo('template_url') ?>/assets/images/projetos/projetos.mp4" type="video/mp4">
@@ -17,6 +18,7 @@
         </div>
     </div>
 
+    <!--CF Educacao-->
     <div class="educacao" id="educacao">
         <div class="container">
             <div class="row justify-content-center">
@@ -47,6 +49,8 @@
             </div>
         </div>
     </div>
+
+    <!--CF Asset-->
     <div class="asset-management" id="asset">
         <div class="container">
             <div class="row justify-content-center">
@@ -107,6 +111,8 @@
             </div>
         </div>
     </div>
+
+    <!--CF Equity-->
     <div class="equity-research" id="equity">
         <div class="container">
             <div class="row justify-content-center">
