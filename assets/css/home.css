@@ -344,11 +344,13 @@ p{
         overflow: hidden; 
     }
 }
-@media (max-width:900px) {
+@media (max-width:1000px) {
     .formulario {
         width: 70%;
     }
-    
+    .section-member{
+        height: 35rem;
+}
 }
 @media (max-width:600px) {
     .infos{
@@ -359,7 +361,7 @@ p{
         width: 100%;
     }
     .section-member{
-        height: 25rem;
+        height: 35rem;
     }
     .parceiros .infos p {
         font-size: .8rem;
