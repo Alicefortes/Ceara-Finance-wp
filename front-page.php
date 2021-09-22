@@ -13,6 +13,8 @@
                     Disruptivos no estado, o Ceará Finance é a primeira instituição universitária 
                     com foco exclusivo em mercado financeiro.
                 </h5>
+            <a href="<?php echo get_home_url() . "/projetos/"?>"><button>Conheça nossos projetos</button></a>
+
             </div>
         </div>
     </div>
