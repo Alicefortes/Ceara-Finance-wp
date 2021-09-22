@@ -20,7 +20,7 @@
         </div>
     </div>
     <!-- Quem somos nós-->
-    <div class="sobre">
+    <div class="sobre" id="sobre">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 section-title">
@@ -34,21 +34,21 @@
             <div class="col-xl-4 numeros">
                 <div class="numeros-item text-center">
                     <h4><span class="material-icons-outlined">event_note</span></h4>    
-                        <h4>4 Anos</h4>
+                        <h4><span class="number-counter" data-count-from="0" data-count-to="4" data-count-speed="1">4</span> Anos</h4>
                         <p>de instituição</p>
                     </div>
                 </div>
             <div class="col-xl-4 numeros">
                 <div class="numeros-item text-center">
                     <h4><span class="material-icons-outlined">school</span></h4>   
-                        <h4>4 Universidades</h4>
+                        <h4><span class="number-counter" data-count-from="0" data-count-to="4" data-count-speed="1">4</span> Universidades</h4>
                         <p>representadas por membros</p>
                     </div>
                 </div>
                 <div class="col-xl-4 numeros text-center">
                     <div class="numeros-item">
                     <h4> <span class="material-icons-outlined">groups</span></h4>  
-                        <h4>1000 Universitários</h4>
+                        <h4><span class="number-counter" data-count-from="0" data-count-to="1000" data-count-speed="250">1000</span> Universitários</h4>
                         <p>atingidos</p>
                     </div>
                 </div>
@@ -79,11 +79,11 @@
         </div>
     </div>
     <!--Parceiros-->
-    <div class="container">
-        <div>
-            <h1>Nossos Parceiros</h1>
-        </div>
+    <div class="container" id="parceiros">
         <div class="row parceiros">
+            <div>
+                <h1>Nossos Parceiros</h1>
+            </div>
             <div class="loop owl-carousel owl-theme">
                 <?php
                     # mostrar os parceiros criados pelo admin
@@ -123,7 +123,7 @@
         </div>
     </div>
     <!--Contato-->
-    <div class="container">
+    <div class="container" id="contato">
         <div class="row justify-content-center  contato ">
             <div class="col-xl-12 contato-title">
                     <h1>Entre em contato</h1>

@@ -21,10 +21,15 @@ p{
 
 .banner .banner-text{
     margin: auto;
-    margin-top:10rem;
+    margin-top:8rem;
     max-width: 1000px;
-    min-width: 330px;
     text-align: center;
+}
+
+@media(max-width:420px){
+    .banner .banner-text{
+        margin-top:4rem;
+    }
 }
 .banner .banner-text span{
     color: #E6CE1D;
@@ -62,7 +67,7 @@ p{
 /*Sobre*/
 
 .sobre{
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 .sobre .section-title h1{
     padding-bottom: 1.8rem;
@@ -106,10 +111,9 @@ p{
     font-size: 1rem;
 }
 
-
-
-
-
+.parceiros{
+    padding-top:4rem;
+}
 
 /* PARCEIROOOOS */
 .owl-carousel .owl-item.big div {
@@ -310,6 +314,12 @@ p{
     margin: auto;
     margin-top: 1rem;
 }
+
+.social-f a{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 .contato .social a{
     cursor: pointer;
     margin-right: 22px;
