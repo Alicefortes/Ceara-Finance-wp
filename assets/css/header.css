@@ -31,13 +31,13 @@
 
 .menu ul>li>a:hover,
 .idioma ul>li>a:hover{
-    color: rgb(207, 190, 32);
+    color: #E6CE1D;
     transition: all 1s;
 }
 
 .menu ul>li>a:focus,
 .idioma ul>li>a:focus{
-    color: rgb(207, 190, 32);
+    color: #E6CE1D
 }
 
 .stroke{

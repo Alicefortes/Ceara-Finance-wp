@@ -31,10 +31,13 @@ a{
     border-color: #0000008C;
     text-align: center;
     padding: 15px;
-    margin: 20px;
+    margin-top: 20px;
     height: 8rem;
 }
 
+.cats{
+    justify-content: space-between;
+}
 
 .categoria-item>a>span{
     color: black;
@@ -99,28 +102,38 @@ a{
     top: 65%;
 }
 
-@media(max-width:500px){
+@media (max-width:576px){
+    .cats{
+        justify-content: center;
+    }
+}
+    
+@media(max-width:767px){
     .postagens .infos{
         margin-right: 0rem!important;
         margin-left: 0rem!important;
     }
 }
 
-@media(min-width:501px) and (max-width:767px){
-    .postagens .infos{
-        margin-right: 3rem!important;
-        margin-left: 3rem!important;
-    }
-}
-
 @media(max-width:767px){
     .postagens .banner img{
-        height: 420px !important;
-        width: 420px !important;
+        height: auto !important;
+        width: 100% !important;
     }
 
-    .segundo .infos .date{
-        display: block;
+    .segundo .banner img{
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .infos .date{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .segundo .infos{
+        margin-top: 0.5rem;
+        margin-left: 0.5rem!important;
     }
 }
 
@@ -130,16 +143,22 @@ a{
     }
 
     .primeiro .infos{
-        margin-top: 67%;
+        margin-top: 0.5rem!important;
+    }
+
+    .primeiro .teste{
+        width: 0;
     }
     .primeiro .banner{
-        height: 100%!important;
+        height: auto!important;
         width: 100%!important;
     }
 
     .primeiro .thumb{
-        height: 100%!important;
+        position: relative;
+        height: auto!important;
         width: 100%!important;
+        border-radius: 10px;
     }
 
     .segundo .banner>a>img{
@@ -223,6 +242,7 @@ a{
     position: relative;
     color: #fff;
     z-index: 0;
+    flex-wrap: wrap;
 }
 
 .segundo .thumb{
@@ -243,6 +263,10 @@ a{
 .date .data{
     margin-right: 1rem;
     }
+
+.data>span{
+    margin-right: 0.2rem;
+}
 
 .primeiro .infos{
     margin-left: 0.5rem;

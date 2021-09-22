@@ -92,26 +92,26 @@ $count =0;
             <div class="container">
                 <div class="bolder pb-5">
                     <h1 class="mb-5">Categorias</h1>
-                    <section class="row justify-content-between">
-                        <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
+                    <section class="row cats">
+                        <div class="categoria-item col-xl-2 col-lg-2 col-md-5 col-sm-5 col-11">
                             <a href="<?php echo get_home_url() . "/category/geral"?>">
                                 <span class="material-icons-outlined">done</span>
                                 <h5>Geral</h5>
                             </a>   
                         </div>
-                        <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
+                        <div class="categoria-item col-xl-2 col-lg-2 col-md-5 col-sm-5 col-11">
                             <a href="<?php echo get_home_url() . "/category/noticias"?>">
                                 <span class="material-icons-outlined">feedback</span>
                                 <h5>Notícias</h5>
                             </a>
                         </div>
-                        <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
+                        <div class="categoria-item col-xl-2 col-lg-2 col-md-5 col-sm-5 col-11">
                             <a href="<?php echo get_home_url() . "/category/artigos"?>">
                                 <span class="material-icons-outlined">article</span>
                                 <h5>Artigos</h5>
                             </a>
                         </div>
-                        <div class="categoria-item col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
+                        <div class="categoria-item col-xl-2 col-lg-2 col-md-5 col-sm-5 col-11">
                             <a href="<?php echo get_home_url() . "/category/eventos"?>">
                                 <span class="material-icons-outlined">event</span>
                                 <h5>Eventos</h5>

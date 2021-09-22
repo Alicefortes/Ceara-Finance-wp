@@ -28,10 +28,13 @@ p{
     margin: auto;
     margin-top:10rem;
     max-width: 1000px;
-    min-width: 330px;
     text-align: center;
 }
-
+@media(max-width:420px){
+    .banner .banner-text{
+        margin-top:6rem;
+    }
+}
 .black-one{
     width: 100%;
     height: 100%;
