@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main>
+    <!--Banner-->
     <div class="banner">
         <video width="100%" autoplay muted loop id="video-back">
             <source src="<?php echo get_bloginfo('template_url') ?>/assets/images/equipe/equipe.mp4" type="video/mp4">
@@ -20,6 +21,8 @@
             </div>
         </div>
     </div>
+
+    <!--Diretoria-->
     <div class="container">
         <div class="row">
             <div id="diretoria">
@@ -69,6 +72,12 @@
                     <?php wp_reset_postdata();?>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!--Analistas-->
+    <div class="container">
+        <div class="row">
             <div id="analistas">
                 <h2 class="text-center">Analistas</h2>
                 <div class="row mt-5 mb-5" style="display:flex; margin-left: 0px; margin-top: 1rem;">
@@ -77,7 +86,7 @@
                         # teste para mostrar os membros criados pelo admin
                         $args = array (
                         'post_type' => 'membros',
-                        'posts_per_page' => 8,
+                        'posts_per_page' => 12,
                         'category_name' => 'analistas'
                         );
                         $tech_posts = new WP_Query($args);
