@@ -30,8 +30,3 @@
     };
 }(jQuery));
   
-
-var n = 0;
-jQuery("#sobre").one("mouseenter click", function() {
-    jQuery('.number-counter').countTo();
-});
