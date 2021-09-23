@@ -120,6 +120,9 @@ a{
         height: auto !important;
         width: 100% !important;
     }
+    .segundo .banner{
+        flex-wrap: wrap;
+    }
 
     .segundo .banner img{
         height: auto !important;
@@ -242,7 +245,7 @@ a{
     position: relative;
     color: #fff;
     z-index: 0;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .segundo .thumb{
@@ -336,6 +339,7 @@ a{
     z-index: 1;
     width: auto;
     margin-left: 2rem;
+    overflow: hidden;
 }
 
 .posts .infos a{

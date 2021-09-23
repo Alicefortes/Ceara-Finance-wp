@@ -1,0 +1,42 @@
+.post-title{
+    background-color: #1B1B1B;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.back-button>a{
+    display: flex;
+}
+
+.back-button p
+{
+    font-size: 20px;
+}
+
+.post-data{
+    display:flex;
+}
+
+.post-info{
+    display: flex;
+    color: #FFFFFF8C;
+}
+
+.post-info>div{
+    margin-right: 1rem;
+}
+
+.post-content,
+.post-share{
+    background-color: #FAFAFA;
+    color: black;
+}
+
+.post-content .content img{
+    max-width: 100%;
+    height: auto;
+}
+
