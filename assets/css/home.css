@@ -307,7 +307,7 @@ p{
     margin: auto;
 }
 
-.social-f{
+.social-c{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,18 +315,18 @@ p{
     margin-top: 1rem;
 }
 
-.social-f a{
+.social-c a{
     margin-right: 1rem;
     margin-left: 1rem;
 }
 
-.contato .social a{
+.contato .social-c a{
     cursor: pointer;
     margin-right: 22px;
     color: #000000;
     transition: .5s;
 }
-.contato .social a:hover{
+.contato .social-c a:hover{
     color: #E6CE1D;
     
 }
