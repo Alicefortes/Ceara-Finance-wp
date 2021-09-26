@@ -1,7 +1,19 @@
-
+*{
+    overflow-wrap: break-word;
+}
 .logo{
     text-align:start;
     min-width:fit-content;
+}
+
+@media (max-width:300px) {
+    .logo a img:nth-child(2){
+        display: none;
+    }
+}
+
+.active>a{
+    color: #E6CE1D!important;
 }
 
 .menu,.idioma{
