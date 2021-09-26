@@ -102,6 +102,10 @@ a{
     top: 65%;
 }
 
+.data,.time{
+    display: flex;
+}
+
 @media (max-width:576px){
     .cats{
         justify-content: center;
@@ -201,8 +205,8 @@ a{
 }
 
 @media (max-width:1199px) and (min-width:991px) {
-    .segundo .infos .date{
-        display: block;
+    .segundo .infos .date .time{
+        display: none;
     }
 }
 
@@ -245,7 +249,7 @@ a{
     position: relative;
     color: #fff;
     z-index: 0;
-    overflow: hidden;
+
 }
 
 .segundo .thumb{
@@ -259,8 +263,9 @@ a{
 
 .segundo .infos{
     z-index: 1;
-    width: auto;
-    margin-left: 1.5rem;
+    width: 100%;
+    margin-left: 1.5rem;  
+    word-break: break-word;
 }
 
 .date .data{

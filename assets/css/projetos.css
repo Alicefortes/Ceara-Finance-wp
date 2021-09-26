@@ -30,10 +30,17 @@ p{
     max-width: 1000px;
     text-align: center;
 }
-@media(max-width:420px){
+@media(max-width:345px){
     .banner .banner-text{
         margin-top:6rem;
     }
+}
+
+@media(max-width:240px){
+    .banner .banner-text{
+        margin-top:3rem;
+    }
+    
 }
 .black-one{
     width: 100%;
@@ -123,6 +130,17 @@ p{
    align-items: flex-start;
 }
 
+@media(max-width:260px){
+    .list-card-item{
+        display: block;
+        text-align: center;
+        
+    }
+
+    .list-card-item .item{
+        padding-left: 0px!important;
+    }
+}
 /*Equity Research*/
 .equity-research{
     margin-bottom: 4.5rem;

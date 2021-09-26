@@ -26,11 +26,18 @@ p{
     text-align: center;
 }
 
-@media(max-width:420px){
+@media(max-width:340px){
     .banner .banner-text{
-        margin-top:4rem;
+        margin-top:5rem;
     }
 }
+
+@media(max-width:271px){
+    .banner .banner-text{
+        margin-top:2rem;
+    }
+}
+
 .banner .banner-text span{
     color: #E6CE1D;
 }
@@ -41,7 +48,7 @@ p{
     font-weight: 700;
     border: none;
     border-radius: .5rem;
-    padding: 1rem 3.6rem;
+    padding: 1rem 2rem;
     transition: .5s;
 }
 .banner button:hover{
@@ -312,17 +319,17 @@ p{
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .social-c a{
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .contato .social-c a{
     cursor: pointer;
-    margin-right: 22px;
     color: #000000;
     transition: .5s;
 }

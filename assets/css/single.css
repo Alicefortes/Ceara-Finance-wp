@@ -23,6 +23,7 @@ a{
 .post-info{
     display: flex;
     color: #FFFFFF8C;
+    flex-wrap: wrap;
 }
 
 .post-info>div{

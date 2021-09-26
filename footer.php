@@ -9,10 +9,11 @@
                 <p>Ceará Finance semanalmente</p>
                 <h2>Conteúdo <br> exclusivo</h2>
                 <p>Se inscreva na nossa Newsletter <br>
-                <span>Tenha tudo na palma da sua mão</span>
+                    <span>Tenha tudo na palma da sua mão</span>
                 </p>
-                <a href="https://gmail.us4.list-manage.com/subscribe?u=5e918c658962181f2aa6fcd4d&id=d0912b68be" target="_blank"><button type="button">Inscreva</button></a>
-                
+                <a href="https://gmail.us4.list-manage.com/subscribe?u=5e918c658962181f2aa6fcd4d&id=d0912b68be" target="_blank">
+                    <button type="button">Inscreva</button>
+                </a>
             </div>
         </div>
     </div>
@@ -57,6 +58,13 @@
                 <a href="#ultimas"><p>Últimas notícias</p></a>
                 <a href="#categorias"><p>Categorias</p></a>
                 <a href="#blog"><p>Blog</p></a> 
+                ';
+            }?>
+            <?php if ( is_single() == true ){
+                echo '
+                <a href=""><p>Título</p></a>
+                <a href=""><p>Compartilhar</p></a>
+                <a href=""><p>Últimas notícias</p></a> 
                 ';
             }?>
         </div>

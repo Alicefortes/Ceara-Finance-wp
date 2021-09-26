@@ -11,49 +11,54 @@ $count =0;
                 <?php $posts = get_posts(array('numberposts' => 3));
                 foreach($posts as $post):?>
                 <?php if ( $count == 0 ){
-                        echo '
-                        <div class="col-xl-6 col-lg-6 col-12 primeiro">
-                        ';
-                    }?>
+                    echo '
+                    <div class="col-xl-6 col-lg-6 col-12 primeiro">
+                    ';
+                }?>
                 <?php if ( $count == 1 ){
-                        echo '
-                        <div class="col-xl-6 col-lg-6 col-md-12 segundo">
-                        ';
-                    }?>
-                    <a href="<?php echo $post->guid;?>">
-                        <div class="banner">
-                            <img class="thumb" <?php if(!has_post_thumbnail( $post->ID )){
-                                    echo "no-thumbnail";
-                                }?>" 
-                                    src="<?php if(has_post_thumbnail( $post->ID )){
-                                                echo get_the_post_thumbnail_url($post->ID);
-                                                }
-                                                else{
-                                                    echo get_template_directory_uri()."/assets/images/logo2.svg";
-                                                }?>" alt="Noticia">  
+                    echo '
+                    <div class="col-xl-6 col-lg-6 col-md-12 segundo">
+                    ';
+                }?>
+                <a href="<?php echo $post->guid;?>">
+                    <div class="banner">
+                        <img class="thumb" 
+                            <?php if(!has_post_thumbnail( $post->ID )){
+                                echo "no-thumbnail";
+                            }?>" 
+                            src="<?php if(has_post_thumbnail( $post->ID )){
+                                echo get_the_post_thumbnail_url($post->ID);
+                            }
+                                else{
+                                    echo get_template_directory_uri()."/assets/images/logo2.svg";
+                            }?>" 
+                            alt="Noticia"
+                        >  
                                                   
-                            <div class="infos">
-                                <h6><?php the_category(', ');?></h6>
+                        <div class="infos">
+                            <h6><?php the_category(', ');?></h6>
+                            <h3>
+                                <a href="<?php the_permalink() ?>" >
                                 <h3>
-                                    <a href="<?php the_permalink() ?>" >
-                                        <?php if (strlen($post->post_title) > 45) {
-                                        echo substr(the_title($before = '', $after = '', FALSE), 0, 45) . '...'; } 
-                                        else {
-                                        the_title();} 
-                                        ?>
-                                    </a>
+                                    <?php if (strlen($post->post_title) > 45) {
+                                    echo substr(the_title($before = '', $after = '', FALSE), 0, 45) . '...'; } 
+                                    else {
+                                    the_title();} 
+                                    ?>
                                 </h3>
-                                <div class="date">
-                                    <div style="display:flex;" class="data">
-                                        <span class="material-icons">schedule</span>
-                                        <h6>
-                                            <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-                                            date_default_timezone_set('America/Sao_Paulo');
-                                            echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
-                                        </h6>
-                                    </div>
-                                    <div style="display:flex;">
-                                        <h6>
+                                </a>
+                            </h3>
+                            <div class="date">
+                                <div class="data">
+                                    <span class="material-icons">schedule</span>
+                                    <h6>
+                                        <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+                                        date_default_timezone_set('America/Sao_Paulo');
+                                        echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
+                                    </h6>
+                                </div>
+                                <div class="time">
+                                    <h6>
                                         <?php $content = get_post_field( 'post_content', $post->ID );
                                         $quantidade_palavras = str_word_count( strip_tags( $content ) );
                                         $tempo_leitura = ceil($quantidade_palavras / 250);
@@ -63,19 +68,19 @@ $count =0;
                                         else{
                                             echo strval($tempo_leitura)." minutos de leitura";
                                         }?>
-                                        </h6>
-                                    </div>
+                                    </h6>
                                 </div>
                             </div>
-                            <div class="teste">
-                            </div>        
                         </div>
-                    </a><br>
+                        <div class="teste">
+                        </div>        
+                    </div>
+                </a><br>
                 <?php if ( $count == 0 or $count == 2 ){
-                        echo '
-                        </div>
-                        ';
-                    }?>
+                    echo '
+                    </div>
+                    ';
+                }?>
                 <?php
                     $count+=1;
                 ?>
