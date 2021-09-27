@@ -114,5 +114,58 @@
             </div>
         </div>
     </section>
+    <!--Ultimas noticias-->
+    <div id="blog">
+            <div class="container">
+                <div class="bolder ">
+                    <h1 class="mb-3">Últimas notícias</h1>
+                    <div class="posts row">
+                        <?php 
+                        $args = array (
+                            'posts_per_page' => 3,
+                            );
+                        $query = new WP_Query($args);
+                        ?>
+                        <?php if($query->have_posts()): while($query->have_posts()): $query->the_post();?>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12 postagens mt-3">
+                            <a href="<?php echo $post->guid;?>">
+                                <div class="banner">
+                                    <img class="thumb" <?php if(!has_post_thumbnail( $post->ID )){
+                                            echo "no-thumbnail";
+                                        }?>" 
+                                            src="<?php if(has_post_thumbnail( $post->ID )){
+                                                        echo get_the_post_thumbnail_url($post->ID);
+                                                        }
+                                                        else{
+                                                            echo get_template_directory_uri()."/assets/images/logo2.svg";
+                                                        }?>" alt="Noticia">  
+                                </div>
+                                    <div class="infos mt-3 mb-3">
+                                        <h6><?php the_category(', ');?></h6>
+                                        <h3>
+                                            <a href="<?php the_permalink() ?>" >
+                                                <?php if (strlen($post->post_title) > 45) {
+                                                echo substr(the_title($before = '', $after = '', FALSE), 0, 45) . '...'; } 
+                                                else {
+                                                the_title();} 
+                                                ?>
+                                            </a>
+                                        </h3>
+                                        <div class="text-teste">
+                                            <a href="<?php the_permalink() ?>" >
+                                                <?php the_excerpt();?>
+                                            </a>
+                                        </div>
+                                    </div>      
+                                
+                            </a><br>
+                        </div>
+                        <?php endwhile; else:?>
+                            <h3>Postagem não encontrada</h3>
+                        <?php endif; wp_reset_postdata();?>
+                    </div>
+                </div>
+            </div>
+        </div>
 </main>
 <?php get_footer();?>

@@ -83,11 +83,12 @@
                 <div class="row mt-5 mb-5" style="display:flex; margin-left: 0px; margin-top: 1rem;">
                 
                     <?php
-                        # teste para mostrar os membros criados pelo admin
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         $args = array (
                         'post_type' => 'membros',
                         'posts_per_page' => 12,
-                        'category_name' => 'analistas'
+                        'paged' => $paged,
+                        'category_name' => 'analistas',
                         );
                         $tech_posts = new WP_Query($args);
                         if($tech_posts->have_posts()) :
@@ -121,8 +122,26 @@
                             </div>
                         </div>
                     </div>
-                    <?php endwhile; ?>
-                    <?php endif;?>
+                    <?php endwhile; else:?>
+                        <h3>Postagem não encontrada</h3>
+                    <?php endif; wp_reset_postdata();?>
+                </div>
+                <div class="carrossel-posts text-center mt-5 mb-3">
+                    <?php 
+                        $total_pages = $tech_posts->max_num_pages;
+
+                        if ($total_pages > 1){
+                            $current_page = max(1, get_query_var('paged'));
+                            echo paginate_links(array(
+                                'base' => get_pagenum_link(1) . '%_%',
+                                'format' => '/page/%#%',
+                                'current' => $current_page,
+                                'total' => $total_pages,
+                                'prev_text'    => __('Anterior'),
+                                'next_text'    => __('Próximo'),
+                            ));
+                        }
+                    ?>    
                     <?php wp_reset_postdata();?>
                 </div>
             </div>

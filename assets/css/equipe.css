@@ -60,7 +60,7 @@ h1{
 }
 
 #analistas{
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 .card-owl{
@@ -97,7 +97,7 @@ h1{
     justify-content: center;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     box-shadow: 0px 10px 20px 0px #0000001A;
     border-radius: 10px;
     height: 32rem;
@@ -123,6 +123,7 @@ h1{
 }
 .infos{
     padding: 1rem;
+    margin-top: 2rem;
 }
 .infos p{
     max-width: 500px; 
@@ -133,4 +134,53 @@ h1{
 }
 .infos svg{
     color: #000000;
+}
+
+.carrossel-posts{
+    flex-direction: column;
+}
+
+.carrossel-posts>*{
+    display: inline-block;
+}
+
+.carrossel-posts a,
+.carrossel-posts .page-numbers{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    box-shadow: 0 8px 24px rgba(112, 144, 176, 0.15);
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: black;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
+
+.carrossel-posts .page-numbers:hover{
+    color: #E6CE1D;
+}
+
+.carrossel-posts a:last-child{
+    padding: 0;
+    background-color: white;
+    box-shadow: none;
+}
+
+.carrossel-posts a:first-child{
+    padding: 0;
+    background-color: white;
+    box-shadow: none;
+}
+
+.carrossel-posts a:last-child:hover,
+.carrossel-posts a:first-child:hover{
+    color: #E6CE1D;
+}
+
+.carrossel-posts span.page-numbers.current{
+    color: #fff;
+    background-color: #E6CE1D;
 }
