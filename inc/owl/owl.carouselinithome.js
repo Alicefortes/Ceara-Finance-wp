@@ -14,25 +14,25 @@ jQuery(function(){
     jQuery('.loop').owlCarousel({
         center: true,
         loop:true,
+        nav:false,
+        dots:true,
+        dotsEach:true,
         margin:10,
         autoplay:true,
         autoplaySpeed:500,
         responsive:{
             0:{
                 items:1,
-                nav:true
             },
             576:{
                 items:1,
-                nav:true
+                
             },
             992:{
                 items:3,
-                nav:true
             },
             1200:{
                 items:3,
-                nav:true,
             }
         }
     })
