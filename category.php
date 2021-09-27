@@ -150,20 +150,20 @@ $count =0;
                                 </div>
                                     <div class="infos mt-3 mb-3">
                                         <h6><?php the_category(', ');?></h6>
-                                        <h3>
-                                            <a href="<?php the_permalink() ?>" >
+                                        <a href="<?php the_permalink() ?>" >
+                                            <h3>
+                                                
                                                 <?php if (strlen($post->post_title) > 45) {
-                                                echo substr(the_title($before = '', $after = '', FALSE), 0, 45) . '...'; } 
-                                                else {
-                                                the_title();} 
+                                                    echo substr(the_title($before = '', $after = '', FALSE), 0, 45) . '...'; } 
+                                                    else {
+                                                    the_title();} 
                                                 ?>
-                                            </a>
-                                        </h3>
-                                        <div class="text-teste">
-                                            <a href="<?php the_permalink() ?>" >
+                                                
+                                            </h3>
+                                            <div class="text-teste">
                                                 <?php the_excerpt();?>
-                                            </a>
-                                        </div>
+                                            </div>
+                                        </a>
                                     </div>      
                                 
                             </a><br>
