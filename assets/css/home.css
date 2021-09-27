@@ -94,6 +94,11 @@ p{
 .numeros-item{
     margin: auto;
 }
+
+.numeros-item h4{
+    font-weight: 700;
+}
+
 .numeros{
     margin-bottom: 2rem;
     display: flex;
@@ -199,19 +204,7 @@ p{
     overflow: hidden; 
 }
 /* nav para telas pequenas*/
-.owl-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: -3rem;
-}
-.owl-nav button{
-    width: 2rem;
-}
-.owl-carousel button span{
-    font-size: 3.5rem;
-}
+
 /* Contato */
 .contato{
     padding-top: 4rem;
@@ -403,6 +396,8 @@ p{
     }
 }
 
-
-
+.number-counter
+{
+    font-weight: 700;
+}
 

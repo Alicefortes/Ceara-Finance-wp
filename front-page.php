@@ -34,22 +34,22 @@
             <div class="col-xl-4 numeros">
                 <div class="numeros-item text-center">
                     <h4><span class="material-icons-outlined">event_note</span></h4>    
-                        <h4><span class="number-counter" data-count-from="0" data-count-to="4" data-count-speed="1">4</span> Anos</h4>
-                        <p>de instituição</p>
+                        <h4><span class="number-counter" data-count-from="0" data-count-to="4" data-count-speed="0.8">4</span> Anos</h4>
+                        <p class="ativador">de instituição</p>
                     </div>
                 </div>
             <div class="col-xl-4 numeros">
                 <div class="numeros-item text-center">
                     <h4><span class="material-icons-outlined">school</span></h4>   
-                        <h4><span class="number-counter" data-count-from="0" data-count-to="4" data-count-speed="1">4</span> Universidades</h4>
-                        <p>representadas por membros</p>
+                        <h4><span class="number-counter" data-count-from="0" data-count-to="4" data-count-speed="0.8">4</span> Universidades</h4>
+                        <p class="ativador">representadas por membros</p>
                     </div>
                 </div>
                 <div class="col-xl-4 numeros text-center">
                     <div class="numeros-item">
                     <h4> <span class="material-icons-outlined">groups</span></h4>  
-                        <h4><span class="number-counter" data-count-from="0" data-count-to="1000" data-count-speed="250">1000</span> Universitários</h4>
-                        <p>atingidos</p>
+                        <h4><span class="number-counter" data-count-from="0" data-count-to="1000" data-count-speed="200">1000</span> Universitários</h4>
+                        <p class="ativador">atingidos</p>
                     </div>
                 </div>
                 

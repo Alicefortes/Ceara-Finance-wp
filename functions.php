@@ -39,6 +39,7 @@ function css_files() {
     wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css');
     wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/css/fonts.css');
     wp_enqueue_style( 'owl-carousel-style', get_template_directory_uri() . '/inc/owl/owl.carousel.css' );
+    wp_enqueue_style( 'owl-carousel-theme', get_template_directory_uri() . '/inc/owl/owl.theme.default.min.css' );
     
     if ( is_front_page() == true ) {
         // só vai carregar se estiver na front-page
@@ -58,7 +59,14 @@ function css_files() {
     if ( is_category() == true ) {
         // só vai carregar se estiver em uma das categorias do blog
         wp_enqueue_style('categoria', get_template_directory_uri() . '/assets/css/categoria.css');
-        
+    }
+
+    if ( is_single() == true ) {
+        // só vai carregar se estiver em um dos posts (single)
+        wp_enqueue_style('posts', get_template_directory_uri() . '/assets/css/single.css');
+    } 
+
+    if (is_category() == true || is_single() == true){
         //funcao para limitar excerpt no blog
         function wpdocs_custom_excerpt_length( $length ) {
             return 35;
@@ -76,11 +84,6 @@ function css_files() {
         }
         add_filter('the_excerpt', 'replace_tag');
     }
-
-    if ( is_single() == true ) {
-        // só vai carregar se estiver em um dos posts (single)
-        wp_enqueue_style('posts', get_template_directory_uri() . '/assets/css/single.css');
-    } 
 }
 add_action('wp_enqueue_scripts', 'css_files');
 
