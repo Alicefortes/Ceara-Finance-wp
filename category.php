@@ -131,7 +131,22 @@ $count =0;
         <div id="blog">
             <div class="container">
                 <div class="bolder pb-5">
-                    <h1 class="mb-5">Blog</h1>
+                    <h1 class="mb-5">
+                        <?php
+                        if ( is_category('geral') == true ){
+                            echo 'Geral';
+                        }
+                        elseif ( is_category('noticias') == true ){
+                            echo 'Notícias';
+                        }
+                        elseif ( is_category('artigos') == true ){
+                            echo 'Artigos';
+                        }
+                        elseif ( is_category('eventos') == true ){
+                            echo 'Eventos';
+                        }
+                        ?>
+                    </h1>
                     <div class="posts row">
                         <?php $query = new WP_Query($wp_query->query_vars);?>
                         <?php if($query->have_posts()): while($query->have_posts()): $query->the_post();?>

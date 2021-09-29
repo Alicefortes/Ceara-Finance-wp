@@ -33,6 +33,8 @@
                         # teste para mostrar os membros criados pelo admin
                         $args = array (
                         'post_type' => 'membros',
+                        'orderby' => 'title',
+                        'order' => 'ASC',
                         'category_name' => 'diretoria'
                         );
                         $tech_posts = new WP_Query($args);
@@ -88,6 +90,8 @@
                         'post_type' => 'membros',
                         'posts_per_page' => 12,
                         'paged' => $paged,
+                        'orderby' => 'title',
+                        'order' => 'ASC',
                         'category_name' => 'analistas',
                         );
                         $tech_posts = new WP_Query($args);
